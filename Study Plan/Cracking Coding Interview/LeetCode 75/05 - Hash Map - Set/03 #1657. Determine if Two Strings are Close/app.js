@@ -1,4 +1,4 @@
-// Daily Question: 2025-04-10
+// LeetCode 75: Hash Map / Set
 // #1657. Determine if Two Strings are Close
 // https://leetcode.com/problems/determine-if-two-strings-are-close/description/?envType=study-plan-v2&envId=leetcode-75
 
@@ -47,8 +47,6 @@ function closeStrings(word1, word2) {
 	let values1 = [...letters1Map.values()].sort((a, b) => a - b);
 	let values2 = [...letters2Map.values()].sort((a, b) => a - b);
 
-	console.log(values1);
-	console.log(values2);
 	for (let i = 0; i < values1.length; i++) {
 		if (values1[i] !== values2[i]) {
 			return false;
